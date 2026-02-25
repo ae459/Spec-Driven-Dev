@@ -2,4 +2,4 @@
 
 For my website, i have created a protfolio that talked about me and what i am in the technology world for future job oppurtunities. I have used Al development to create the website, but using the presice prompts and follow up questions with the Al to be able to develop a website that produces a relible website. I have run certian prompts to tak about the design i chose, The minimilist technologist. The content Model of the website, Receipt-Driven Archeticuture. The tech + hosting that is the most reliable for this, Astro + Netlify. Definition of done checklist that was revied with every sprint that was created to ensure it matches my needs and constraints that i have set at the beginning of my process. All of this has taught me that when using Al, You have to break it down piece by piece to be able to have the Al understand your intentions and goals for your development and process It's about how you use certain prompts and the imporance of follow up questions to adjust and mold the Al to follow your intentions.
 
-The live site is deployed using GitHub Pages.
+Live Site: https://ae459.github.io/Spec-Driven-Dev/
