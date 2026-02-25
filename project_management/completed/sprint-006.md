@@ -38,3 +38,29 @@
 
 - Do not add any new content or components.
 - Do not change the design system.
+
+---
+
+## Sprint 006: Deployment
+
+**Objective:** Organize the final project files and deploy the static portfolio to GitHub Pages.
+
+---
+
+### What Changed
+
+- **File Structure Reorganization**:
+  - A directory was created at the root of the project.
+  - The final , `style.css`, and `script.js` files were moved into the directory. This is the standard structure for deploying a simple static site to GitHub Pages.
+- **Repository Update**:
+  - The new file structure was committed and pushed to the `main` branch of the GitHub repository.
+- **GitHub Pages Configuration**:
+  - Instructions were provided to configure the repository settings to deploy from the folder on the `main` branch.
+
+---
+
+### Acceptance Criteria
+
+- [x] All project source files (, `style.css`, `script.js`) are located within a folder.
+- [x] The project is successfully deployed and accessible via a GitHub Pages URL.
+- [x] The repository's `main` branch is configured to deploy from the folder.

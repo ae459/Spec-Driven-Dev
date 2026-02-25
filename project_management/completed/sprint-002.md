@@ -1,39 +1,27 @@
-### **Sprint 002: Content Modeling & Schema**
+# Sprint 002: Content Model & Basic Styling
 
-**Goal:** Define the data structure for project case studies using Astro's content collections and create a sample project to validate the schema.
+**Objective:** Implement the foundational "Minimalist Technologist" design by establishing the dark theme, core typography, and basic page structure.
 
-**Scope (In/Out):**
+---
 
-- **In:** Creating the content collection configuration, defining the `projects` schema, and creating one sample Markdown file.
-- **Out:** Rendering any project content on the page, styling the content.
+### What Changed
 
-**Tasks:**
+- **[index.html](http://_vscodecontentref_/0)**:
+    - Added a `<link>` to Google Fonts to import the 'IBM Plex Mono' font.
+    - Created a `<main>` element to act as the central layout container.
+    - Added four `<section>` elements with IDs (`#hero`, `#projects`, `#about`, `#contact`) to structure the page content.
 
-1.  Create the directory `src/content/projects/`.
-2.  Create the content collection configuration file: `src/content/config.ts`.
-3.  Define the `projects` collection within `config.ts` with all fields specified in the main spec (title, headline, stack, etc.).
-4.  Create a sample project file: `src/content/projects/sample-project.md`.
-5.  Fill the sample project file with valid frontmatter data according to the schema and some placeholder body text.
+- **`style.css`**:
+    - Set the `body` background to a dark gray (`#111827`) and the default text color to a light gray (`#D1D5DB`).
+    - Set the default font for the page to `'IBM Plex Mono'`.
+    - Styled the `main` container to have a maximum width and be centered on the page.
+    - Added bottom margin to all `section` elements to create consistent spacing (vertical rhythm).
 
-**Files to Touch:**
+---
 
-- `src/content/config.ts` (new)
-- `src/content/projects/sample-project.md` (new)
+### Acceptance Criteria
 
-**Acceptance Criteria:**
-
-1.  The Astro development server runs without any errors related to the content collection.
-2.  The `projects` collection schema in `src/content/config.ts` exactly matches all fields from section 3.2 of the implementation spec.
-3.  The `sample-project.md` file contains all required frontmatter fields and passes schema validation.
-
-**Verification Steps:**
-
-1.  Run `npm run dev` and ensure there are no terminal errors.
-2.  Manually compare the fields in `src/content/config.ts` against the implementation spec.
-3.  Introduce a deliberate error in the `sample-project.md` frontmatter (e.g., misspell a field name) and confirm that the Astro dev server throws a helpful error message. Correct the error afterward.
-
-**What Not to Do:**
-
-- Do not attempt to query or render this content in any component yet.
-- Do not create more than one sample project file.
-- Do not add any images yet.
+- [x] The page has a dark background and light text.
+- [x] The page uses a monospaced font.
+- [x] The HTML is structured with `<main>` and `<section>` tags.
+- [x] Sections are separated by consistent spacing.

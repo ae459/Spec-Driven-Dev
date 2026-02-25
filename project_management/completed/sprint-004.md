@@ -42,3 +42,34 @@
 
 - Do not fetch or display project data.
 - Do not spend time on responsive styling yet.
+
+---
+
+# Sprint 004: Dynamic Content (Projects Section)
+
+**Objective:** Use vanilla JavaScript to dynamically generate and render the "receipt-style" project cards from a structured data object.
+
+---
+
+### What Changed
+
+- **`script.js`**:
+  - A `projects` array was created to hold project data (title, date, description, tasks, total).
+  - Logic was added to execute after the DOM is fully loaded (`DOMContentLoaded`).
+  - This logic loops through the `projects` array, dynamically creates an `<article>` element for each project, and injects the generated HTML into the `#projects` section of the page.
+
+- **`index.html`**:
+  - The placeholder paragraph in the `#projects` section was removed to prepare for the dynamically injected content.
+
+- **`style.css`**:
+  - Added styles for the `.project-card` class and its internal elements (`h3`, `.date`, `.tasks`, `.total`). These styles create the final "receipt" look with a distinct background color, borders, and typography.
+
+---
+
+### Acceptance Criteria
+
+- [x] Project data is stored in a JavaScript array of objects.
+- [x] JavaScript is used to dynamically render projects on the page.
+- [x] The script waits for the DOM to be loaded before executing.
+- [x] The rendered projects are styled to look like receipts, matching the design spec.
+- [x] The system is extensible, allowing for easy addition/modification of projects in the `script.js` file.

@@ -38,3 +38,36 @@
 
 - Do not create individual pages for each project.
 - Do not add the project links (`liveUrl`, `repoUrl`) to the cards yet.
+
+---
+
+### **Sprint 005: Polish & Interactivity**
+
+**Objective:** Refine the user experience by fixing alignment issues, adding interactivity, and completing the page structure.
+
+---
+
+### What Changed
+
+- **`style.css`**:
+  - **Fixed Cost Alignment**: Applied `display: flex` and `justify-content: space-between` to the `.tasks li` and `.total` selectors to create perfect right-alignment for all costs.
+  - **Added Hover Effect**: Added a `.project-card:hover` style that slightly brightens the border color, providing clear visual feedback on interaction.
+  - **Styled Card Links**: Added styles to ensure the project card links are block-level and inherit the correct text color.
+  - **Styled Footer**: Added basic styling for the new footer element.
+
+- **`script.js`**:
+  - **Made Project Cards Clickable**: The rendering logic was modified to wrap the entire content of each project card in an anchor (`<a>`) tag, making the whole card a clickable target.
+
+- **`index.html`**:
+  - **Added Footer**: A `<footer>` with a copyright notice was added to the bottom of the page to complete the structure.
+  - **Updated Contact Links**: Placeholder links in the contact section were updated.
+
+---
+
+### Acceptance Criteria
+
+- [x] Project card costs are perfectly right-aligned.
+- [x] Project cards are fully clickable.
+- [x] Project cards have a visual hover effect.
+- [x] A footer is present and styled.
+- [x] Placeholder links have been updated.
